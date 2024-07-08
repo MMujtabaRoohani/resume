@@ -1,0 +1,101 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Muhammad Mujtaba Roohani <mujtaba.roohani@hotmail.com>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{02577a}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Muhammad}{Mujtaba Roohani}
+\position{Sofware Engineer{\enskip\cdotp\enskip}Backend / iOS}
+\address{165/G Flora Homes, Flat \# 201, PECHS Block 3, 75400, Karachi, Pakistan}
+
+\mobile{(+92) 333-225-2953}
+\email{mujtaba.roohani@gmail.com}
+%\dateofbirth{January 1st, 1970}
+% \homepage{www.posquit0.com}
+\github{MMujtabaRoohani}
+\linkedin{MMujtabaRoohani}
+% \gitlab{gitlab-id}
+\stackoverflow{1703291}{MMujtabaRoohani}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+\medium{MMujtabaRoohani}
+% \kaggle{kaggle-id}
+\hackerrank{MMujtabaRoohani}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{The worth of every being is in their \href{https://en.wikipedia.org/wiki/Ihsan}{{\textcolor{awesome}{yohsin}}}}{Ali}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Mujtaba Roohani{\enskip\cdotp\enskip}Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{sections/experience.tex}
+\input{sections/education.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}
